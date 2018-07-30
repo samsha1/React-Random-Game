@@ -28,3 +28,9 @@ span {
   color: #99bb99;
   cursor: not-allowed;
 }
+
+.doneFrame{
+  position: relative;
+  right:50px;
+
+}
