@@ -82,7 +82,9 @@ class Game extends React.Component {
   updateDoneStatus = () => {
     this.setState(prevState => {
       if (prevState.usedNumbers.length === 9) {
-        return { doneStatus: "You Win!" };
+        return { 
+          numberOfrandomStars:null,
+          doneStatus: "You Win!" };
       }
       if (prevState.redraws === 0 && !this.possibleSolutions(prevState)) {
         return { doneStatus: "Game Over!" };
@@ -254,7 +256,7 @@ const Answer = props => {
 
 const DoneFrame = props => {
   return (
-    <div className="text-center">
+    <div className="text-center doneFrame">
       <h2>{props.doneStatus}</h2>
       <br/>
       <button className="btn btn-default" onClick={props.playAgain}>Play Again!</button>
