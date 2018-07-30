@@ -116,6 +116,7 @@ class Game extends React.Component {
     } = this.state;
     return (
       <div className="container">
+      <br/>
         <h3>Play Nine</h3>
         <hr />
         <div className="row">
