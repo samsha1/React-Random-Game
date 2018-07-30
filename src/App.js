@@ -117,7 +117,7 @@ class Game extends React.Component {
     return (
       <div className="container">
       <br/>
-        <h3>Play Nine</h3>
+        <h3>Play Random</h3>
         <hr />
         <div className="row">
           <Stars randomnumberOfStars={numberOfrandomStars} />
